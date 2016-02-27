@@ -1,48 +1,22 @@
 {
-  "name": "hubot",
-  "version": "2.18.0",
-  "author": "hubot",
-  "keywords": [
-    "github",
-    "hubot",
-    "campfire",
-    "bot"
-  ],
-  "description": "A simple helpful robot for your Company",
-  "license": "MIT",
+  "name": "hubot-groupme",
+  "version": "2.2.0",
+  "author": "Adam Edgett <adam.edgett@gmail.com>",
+  "description": "GroupMe adapter for Hubot",
+  "keywords": ["hubot", "groupme", "adapter"],
+  "licenses": [{
+    "type": "MIT"
+  }],
   "repository": {
     "type": "git",
-    "url": "https://github.com/github/hubot.git"
+    "url": "https://github.com/AdamEdgett/hubot-groupme.git"
   },
+  "bugs": {
+    "url": "https://github.com/AdamEdgett/hubot-groupme/issues"
+  },
+  "main": "./src/groupme.coffee",
+  "engine": "node > 0.8.0 < 0.11.0",
   "dependencies": {
-    "async": ">=0.1.0 <1.0.0",
-    "chalk": "^1.0.0",
-    "cline": "^0.8.2",
-    "coffee-script": "1.6.3",
-    "connect-multiparty": "^1.2.5",
-    "express": "^3.21.2",
-    "log": "1.4.0",
-    "optparse": "1.0.4",
-    "scoped-http-client": "0.11.0"
-  },
-  "devDependencies": {
-    "hubot-mock-adapter": "^1.0.0",
-    "coffee-errors": "0.8.6",
-    "mocha": "^2.1.0",
-    "mockery": "^1.4.0",
-    "sinon-chai": "^2.8.0",
-    "sinon": "~1.17.0",
-    "chai": "~2.1.0"
-  },
-  "engines": {
-    "node": ">= 0.8.x",
-    "npm": ">= 1.1.x"
-  },
-  "main": "./index",
-  "bin": {
-    "hubot": "./bin/hubot"
-  },
-  "scripts": {
-    "test": "./script/test"
+    "coffee-script": "1.6.3"
   }
 }

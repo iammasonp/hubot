@@ -1,18 +1,31 @@
-# Hubot
+# Hubot Groupme
+[![npm](https://img.shields.io/npm/v/hubot-groupme.svg)](https://www.npmjs.com/package/hubot-groupme)
 
-Hubot is a chat bot, modeled after GitHub's Campfire bot, hubot. He's pretty
-cool. He's [extendable with scripts](http://hubot.github.com/docs/#scripts) and can work on [many
-different chat services](https://hubot.github.com/docs/adapters/).
+Groupme adapter for hubot
 
-This repository provides a library that's distributed by `npm` that you
-use for building your own bots.  See the [documentation](http://hubot.github.com/docs)
-for details on getting up and running with your very own robot friend.
+## Installation
 
-In most cases, you'll probably never have to hack on this repo directly if you
-are building your own bot. But if you do, check out [CONTRIBUTING.md](CONTRIBUTING.md)
+In your hubot repo, run:
+`npm install --save hubot-groupme`
 
-If you'd like to chat, drop by [#hubot](http://webchat.freenode.net/?channels=#hubot) on FreeNode IRC.
+## Running
+To use this adapter run hubot with the adapter argument
 
-## License
+`./bin/hubot -a groupme`
 
-See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+Or set the adapter environment variable
+
+`export HUBOT_ADAPTER="groupme"`
+
+### Configuration
+
+Three environment variables must be set:
+
+* `HUBOT_GROUPME_ROOM_ID`: a GroupMe chat room ID. ex: `"111222"`
+* `HUBOT_GROUPME_TOKEN`: a GroupMe access token. ex: `"mFKYryFoTjdPkKGd9shvjwnMunSSOLvhs44498Fc"`
+* `HUBOT_GROUPME_BOT_ID`: a GroupMe bot ID token. ex: `"66J7ZcVwlRTqEQvdSLNnmV69wV"`
+
+### Source
+
+Forked from [cdzombak/hubot-groupme-http](https://github.com/cdzombak/hubot-groupme-http)
+to support the updated Groupme V3 API
